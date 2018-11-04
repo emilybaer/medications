@@ -4,9 +4,13 @@ Medications API coding challenge
 ## Install python 3 and pipenv
 
 ### Install python 3
-Install python 3: `brew install python`
-See which version of python you're using: `python --version`
-If you still see python 2, If you still see 2.7 ensure in PATH /usr/local/bin/ takes precedence over /usr/bin/
+Install python 3: 
+```brew install python```
+
+See which version of python you're using: 
+```python --version```
+
+If you still see 2.7 ensure in PATH /usr/local/bin/ takes precedence over /usr/bin/.
 Alternatively, find where python 3 lives and fully qualify it when running applications:
 ```
 which python3
