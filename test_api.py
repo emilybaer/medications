@@ -65,7 +65,6 @@ class TestPillPackAPI(unittest.TestCase):
             
             mocked_get_request.assert_called_with(url=url)
             self.assertEqual(request, test_response_json())
-    
 
 def test_response_json():
     return json.dumps(

@@ -147,7 +147,10 @@ class TestMedication(unittest.TestCase):
         ]
 
         for test in test_cases:
-            generics = medication.get_generics(medications=test['medications'], active_only=test['active_only'])
+            generics = medication.get_generics(
+                medications=test['medications'],
+                active_only=test['active_only']
+            )
             self.assertEqual(generics, test['expected'], test['test_name'])
 
 
@@ -313,7 +316,10 @@ class TestMedication(unittest.TestCase):
         ]
 
         for test in test_cases:
-            updates = medication.get_prescription_updates(test['medications'], test['prescriptions'])
+            updates = medication.get_prescription_updates(
+                test['medications'],
+                test['prescriptions']
+            )
             self.assertEqual(updates, test['expected_updates'], test['test_name'])
 
 def list_of_medications():

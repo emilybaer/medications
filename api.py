@@ -11,9 +11,12 @@ class APIError(Exception):
 
 class PillPackAPI():
     def __init__(self):
+        """Set the base url for the API"""
         self.base = 'http://api-sandbox.pillpack.com/'
 
     def get_medications(self, id=None):
+        """Get medications from the API. If id is not specified, gets all meds. 
+        Otherwise id should be the desired medication id"""
         url = self.base + 'medications/'
         if id:
             url = url + str(id)
@@ -21,6 +24,8 @@ class PillPackAPI():
         return self.get_request(url=url)
 
     def get_prescriptions(self, id=None):
+        """Get prescriptions from the API. If id is not specified, gets all rxs. 
+        Otherwise id should be the desired rx id"""
         url = self.base + 'prescriptions/'
         if id:
             url = url + str(id)
@@ -28,6 +33,7 @@ class PillPackAPI():
         return self.get_request(url=url)
 
     def get_request(self, url):
+        """Sets up and executes a request to the specified url"""
         request = requests.get(
             url,
             headers={'Content-Type':'application/json'}
