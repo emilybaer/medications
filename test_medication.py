@@ -163,11 +163,13 @@ class TestMedication(unittest.TestCase):
                         'id':'1',
                         'rxcui':'100',
                         'generic':False,
+                        'active':True
                     },
                     {
                         'id':'2',
                         'rxcui':'100',
                         'generic':True,
+                        'active':True
                     },
                 ],
                 'prescriptions': [
@@ -190,11 +192,13 @@ class TestMedication(unittest.TestCase):
                         'id':'1',
                         'rxcui':'100',
                         'generic':False,
+                        'active':True
                     },
                     {
                         'id':'2',
                         'rxcui':'100',
                         'generic':False,
+                        'active':True
                     },
                 ],
                 'prescriptions': [
@@ -212,11 +216,13 @@ class TestMedication(unittest.TestCase):
                         'id':'1',
                         'rxcui':'100',
                         'generic':True,
+                        'active':True
                     },
                     {
                         'id':'2',
                         'rxcui':'100',
                         'generic':False,
+                        'active':True
                     },
                 ],
                 'prescriptions': [
@@ -234,16 +240,19 @@ class TestMedication(unittest.TestCase):
                         'id':'1',
                         'rxcui':'100',
                         'generic':False,
+                        'active':True
                     },
                     {
                         'id':'2',
                         'rxcui':'100',
                         'generic':True,
+                        'active':True
                     },
                     {
                         'id':'3',
                         'rxcui':'100',
                         'generic':False,
+                        'active':True
                     },
                 ],
                 'prescriptions': [
@@ -266,16 +275,19 @@ class TestMedication(unittest.TestCase):
                         'id':'1',
                         'rxcui':'100',
                         'generic':False,
+                        'active':True
                     },
                     {
                         'id':'2',
                         'rxcui':'100',
                         'generic':True,
+                        'active':True
                     },
                     {
                         'id':'3',
                         'rxcui':'100',
                         'generic':True,
+                        'active':True
                     }
                 ],
                 'prescriptions': [
@@ -298,11 +310,13 @@ class TestMedication(unittest.TestCase):
                         'id':'1',
                         'rxcui':'100',
                         'generic':False,
+                        'active':True
                     },
                     {
                         'id':'2',
                         'rxcui':'100',
                         'generic':True,
+                        'active':True
                     }
                 ],
                 'prescriptions': [
